@@ -50,7 +50,7 @@ app.get("/api/v1", (req, res) => {
   console.log("It run pretty good");
 });
 
-const mongoUrl = `mongodb://mongo:${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_IP}:${MONGO_PORT}/?authSource=admin`;
+const mongoUrl = `mongodb://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_IP}:${MONGO_PORT}/?authSource=admin`;
 
 // How to implement a retry incase of network failure
 const connectWithRetry = () => {
